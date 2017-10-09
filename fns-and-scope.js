@@ -5,7 +5,12 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
+function isTyler(name){
+  if ('Tyler' === name){
+    return true;
+  }else return false;
 
+}
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,7 +18,10 @@ var name = 'Tyler';
 
 
   //Code Here
-
+function getName(){
+var name = prompt("Enter name")
+return name
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -23,7 +31,11 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+function welcome(){
+  var name = getName()
+ 
+  alert('Welcome, ' + name);
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -43,8 +55,17 @@ var name = 'Tyler';
 
 
   //Answer Here
-
-
+//NaN
+//undefined
+//false
+//0
+//""
+//null
+/*function flasyFinder(value){
+  if (value){
+    return true;
+  }else return false;
+}*/
 
 //////////////////PROBLEM 6////////////////////
 
@@ -53,15 +74,18 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
-
+  function myName(){
+  return "Chris Foster";
+  }
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+  function newMyName(){
+var newName = myName();
+  }
 //Now alert the result of invoking newMyName
-
+alert(newName);
 
 
 //////////////////PROBLEM 7////////////////////
@@ -71,9 +95,17 @@ var name = 'Tyler';
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+  function anonFunc(){
+    return "Chris Foster";
+  }
+  function outerFn(){
+   return anonFunc;
+  }
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+  function innerFn(){
+ return "Chris Foster";
+  }
 //Now invoke innerFn.
+innerFn()
